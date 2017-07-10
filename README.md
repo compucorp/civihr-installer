@@ -92,9 +92,20 @@ Depending on your permissions settings, you might need to change the permissions
 
 Besides the `admin` user, the script will also create the `civihr_staff`, `civihr_manager` and `civihr_admin` users. Each one has a different access level to the system. The password for them is the same as their user names.
 
+Upgrading CiviHR
+----------------
+Currently its only possible to upgrade from one version of CiviHR to the next (for example from 1.6.9 to 1.6.10). So you'll need to run the upgrade script for each version. 
+
+For easier understanding upgrade scripts are split into 3 parts. 
+- PRE RELEASE part which is done before any code is updated
+- RELEASE part which updates the code from the repos and runs upgrades
+- POST RELEASE which takes care of any new configurations that need to be made after upgrades
+
+Upgrade scripts can be found in upgrade-scripts folder. They must be run from web root folder of the site, not any of it subdirs due to depending on relative paths to run git updates.
+
+
 Known Issues and Limitations
 ----------------------------
-- Upgrades are not possible at the moment. Sometimes the upgrade process requires some manual steps that cannot be automated by the script yet.
 - If you pass the database password to the command (using the `--dbpass` option), you might see a warning saying "Using a password on the command line interface can be insecure". This is just a warning from MySQL and it doesn't interfere with the installation process.
 - If you check the command output, you might see an error message saying "Error while trying to find the common path for enabled extensions of project radix. Extensions are: civihr_default_theme, default, radix.". We're working on fixing this, but for the moment, you can igore it, since it doesn't interfere with the installation.
 - The created site is not suitable for development, as it lacks many of the tools necessary for this
