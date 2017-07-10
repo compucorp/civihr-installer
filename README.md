@@ -94,7 +94,7 @@ Besides the `admin` user, the script will also create the `civihr_staff`, `civih
 
 Upgrading CiviHR
 ----------------
-Currently its only possible to upgrade from one version of CiviHR to the next (for example from 1.6.9 to 1.6.10). So you'll need to run the upgrade script for each version. 
+Currently it's only possible to upgrade from one version of CiviHR to the next (for example from 1.6.9 to 1.6.10). So you'll need to run the upgrade script for each version. 
 
 For easier understanding upgrade scripts are split into 3 parts. 
 - PRE RELEASE part which is done before any code is updated
