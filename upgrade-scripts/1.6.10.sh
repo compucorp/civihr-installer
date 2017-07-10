@@ -4,6 +4,8 @@
 #
 # PRE RELEASE
 drush -y en civicrm_resources
+# END OF PRERELEASE
+# RELEASE 
 cd sites/all/modules/civicrm/tools/extensions/civihr && git pull origin master &&  cd -
 cd sites/all/modules/civicrm/tools/extensions/civihr_tasks && git pull origin master &&  cd -
 cd sites/all/modules/civihr-custom && git pull origin master &&  cd -
@@ -23,6 +25,9 @@ drush vdis civihr_staff_directory
 drush ven civihr_staff_directory
 drush en -y logintoboggan
 drush vset logintoboggan_login_with_email 1
+drush cc civicrm
+drush cc all
+# END OF RELEASE
 # POST RELEASE
 drush role-add-perm 'civihr_manager' 'change document status'
 drush role-add-perm 'civihr_manager' 'access Tasks and Assignments Files'
@@ -31,5 +36,5 @@ drush role-add-perm 'civihr_staff' 'access AJAX API'
 drush role-add-perm 'civihr_staff' 'view all activities'
 drush role-add-perm 'civihr_staff' 'access Tasks and Assignments Files'
 drush role-add-perm 'civihr_staff' 'access uploaded files'
-drush cc civicrm
-drush cc all
+# END OF POST RELEASE
+
