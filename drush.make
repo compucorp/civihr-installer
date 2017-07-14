@@ -132,7 +132,7 @@ projects[download][subdir] = civihr-contrib-required
 projects[download][version] = "2.5"
 
 projects[views_fieldsets][subdir] = civihr-contrib-required
-projects[views_fieldsets][version] = "1.2"
+projects[views_fieldsets][version] = "2.1"
 
 projects[options_element][subdir] = civihr-contrib-required
 projects[options_element][version] = "1.12"
