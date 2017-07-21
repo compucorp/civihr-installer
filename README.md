@@ -11,7 +11,7 @@ In order to run the script and CiviHR you'll need:
 - MySQL 5.5 or 5.6
 - Git
 - Curl
-- Drush >= 7 (the script will download this automatically if not present, but if you already have drush installed, make sure it's this minimum required version)
+- Drush >= 7 (Available globally)
 
 You'll also need to enable URL rewriting on your web server.
 
@@ -102,7 +102,6 @@ For easier understanding upgrade scripts are split into 3 parts.
 - POST RELEASE which takes care of any new configurations that need to be made after upgrades
 
 Upgrade scripts can be found in upgrade-scripts folder. They must be run from web root folder of the site, not any of it subdirs due to depending on relative paths to run git updates.
-
 
 Known Issues and Limitations
 ----------------------------
