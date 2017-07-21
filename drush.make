@@ -244,12 +244,12 @@ libraries[civihr_tasks][overwrite] = TRUE
 
 libraries[org.civicrm.shoreditch][destination] = modules/civicrm/tools/extensions
 libraries[org.civicrm.shoreditch][download][type] = git
-libraries[org.civicrm.shoreditch][download][url] = https://github.com/compucorp/org.civicrm.shoreditch
+libraries[org.civicrm.shoreditch][download][url] = https://github.com/civicrm/org.civicrm.shoreditch
 libraries[org.civicrm.shoreditch][overwrite] = TRUE
 
 libraries[org.civicrm.styleguide][destination] = modules/civicrm/tools/extensions
 libraries[org.civicrm.styleguide][download][type] = git
-libraries[org.civicrm.styleguide][download][url] = https://github.com/compucorp/org.civicrm.styleguide
+libraries[org.civicrm.styleguide][download][url] = https://github.com/civicrm/org.civicrm.styleguide
 libraries[org.civicrm.styleguide][overwrite] = TRUE
 
 ; ****************************************
