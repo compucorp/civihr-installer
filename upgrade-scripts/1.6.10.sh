@@ -10,8 +10,8 @@ cd sites/all/modules/civicrm/tools/extensions/civihr && git pull origin master &
 cd sites/all/modules/civicrm/tools/extensions/civihr_tasks && git pull origin master &&  cd -
 cd sites/all/modules/civihr-custom && git pull origin master &&  cd -
 cd sites/all/themes/civihr_employee_portal_theme && git pull origin master &&  cd -
-cd sites/all/modules/civicrm/tools/extensions/org.civicrm.styleguide/ && git pull origin master &&  cd -
-cd sites/all/modules/civicrm/tools/extensions/org.civicrm.shoreditch/ && git pull origin master &&  cd -
+cd sites/all/modules/civicrm/tools/extensions/org.civicrm.styleguide/ && git remote set-url origin https://github.com/civicrm/org.civicrm.shoreditch.git && git fetch origin && git checkout master &&  cd -
+cd sites/all/modules/civicrm/tools/extensions/org.civicrm.shoreditch/ && git remote set-url origin https://github.com/civicrm/org.civicrm.shoreditch.git && git fetch origin && git checkout master &&  cd -
 drush cvapi extension.refresh local=1
 drush updatedb -y
 drush cvapi extension.upgrade -y
