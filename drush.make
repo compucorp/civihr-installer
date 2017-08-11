@@ -156,6 +156,9 @@ projects[views_merge_rows][version] = "1.0-rc1"
 projects[masquerade][subdir] = civihr-contrib-required
 projects[masquerade][version] = "1.0-rc7"
 
+projects[yoti][subdir] = civihr-contrib-required
+projects[yoti][version] = "1.4"
+
 ; Patch for pagination
 projects[views_merge_rows][patch][] = "https://www.drupal.org/files/issues/views_merge_rows-views_merge_rows_and_pagination-2188939-3_0.patch"
 projects[views_merge_rows][patch][] = "https://www.drupal.org/files/issues/views_merge_rows-views_merge_rows_pagination-2724691-2.patch"
