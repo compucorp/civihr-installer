@@ -853,7 +853,10 @@ function civihr_install_site(){
 
     drush -y updatedb
     drush -y dis overlay shortcut color
-    drush -y en administerusersbyrole role_delegation civicrm toolbar locale seven userprotect masquerade smtp yoti
+    drush -y en administerusersbyrole role_delegation civicrm toolbar locale seven userprotect masquerade smtp logintoboggan yoti
+
+    drush vset logintoboggan_login_with_email 1
+    drush vset --format=integer user_pictures 0
 
     install_civihr
 
