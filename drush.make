@@ -18,14 +18,10 @@ projects[] = drupal
 ; CiviCRM core
 ; ****************************************
 
-; IMPORTANT: replace "github.com/civicrm" by your own fork of CiviCRM.
-; This will make it easier to submit pull-requests for patches.
-; see: http://wiki.civicrm.org/confluence/display/CRMDOC/Github+for+CiviCRM
-
 libraries[civicrm][destination] = modules
 libraries[civicrm][directory_name] = civicrm
 libraries[civicrm][download][type] = get
-libraries[civicrm][download][url] = "https://download.civicrm.org/civicrm-4.7.18-drupal.tar.gz"
+libraries[civicrm][download][url] = "https://download.civicrm.org/civicrm-4.7.27-drupal.tar.gz"
 
 libraries[civihr][destination] = modules
 libraries[civihr][directory_name] = civicrm/tools/extensions/civihr
@@ -157,6 +153,9 @@ projects[views_merge_rows][version] = "1.0-rc1"
 projects[masquerade][subdir] = civihr-contrib-required
 projects[masquerade][version] = "1.0-rc7"
 
+projects[logintoboggan][subdir] = civihr-contrib-required
+projects[logintoboggan][version] = "1.5"
+
 projects[yoti][subdir] = civihr-contrib-required
 projects[yoti][version] = "1.4"
 
@@ -205,6 +204,9 @@ projects[menu_attributes][version] = 1.0
 
 projects[roles_for_menu][subdir] = civihr-contrib-required
 projects[roles_for_menu][version] = 1.1
+
+projects[views_slideshow][subdir] = civihr-contrib-required
+projects[views_slideshow][version] = 3.9
 
 ; ****************************************
 ; Compucorp custom drupal modules
