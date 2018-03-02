@@ -6,12 +6,12 @@
 drush -y en civicrm_resources
 # END OF PRERELEASE
 # RELEASE 
-cd sites/all/modules/civicrm/tools/extensions/civihr && git pull origin master &&  cd -
-cd sites/all/modules/civicrm/tools/extensions/civihr_tasks && git pull origin master &&  cd -
-cd sites/all/modules/civihr-custom && git pull origin master &&  cd -
-cd sites/all/themes/civihr_employee_portal_theme && git pull origin master &&  cd -
-cd sites/all/modules/civicrm/tools/extensions/org.civicrm.styleguide/ && git remote set-url origin https://github.com/civicrm/org.civicrm.shoreditch.git && git fetch origin && git checkout master &&  cd -
-cd sites/all/modules/civicrm/tools/extensions/org.civicrm.shoreditch/ && git remote set-url origin https://github.com/civicrm/org.civicrm.shoreditch.git && git fetch origin && git checkout master &&  cd -
+cd sites/all/modules/civicrm/tools/extensions/civihr && git fetch origin && git checkout 1.6.10 && cd -
+cd sites/all/modules/civicrm/tools/extensions/civihr_tasks && git fetch origin && git checkout 1.6.10 && cd -
+cd sites/all/modules/civihr-custom && git fetch origin && git checkout 1.6.10 && cd -
+cd sites/all/themes/civihr_employee_portal_theme && git fetch origin && git checkout 1.6.10 && cd -
+cd sites/all/modules/civicrm/tools/extensions/org.civicrm.styleguide/ && git remote set-url origin https://github.com/civicrm/org.civicrm.shoreditch.git && git fetch origin && git checkout 0.1-alpha3 &&  cd -
+cd sites/all/modules/civicrm/tools/extensions/org.civicrm.shoreditch/ && git remote set-url origin https://github.com/civicrm/org.civicrm.shoreditch.git && git fetch origin && git checkout v0.1-alpha9 &&  cd -
 drush cvapi extension.refresh local=1
 drush updatedb -y
 drush cvapi extension.upgrade -y
