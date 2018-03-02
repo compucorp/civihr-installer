@@ -94,14 +94,7 @@ Besides the `admin` user, the script will also create the `civihr_staff`, `civih
 
 Upgrading CiviHR
 ----------------
-Currently it's only possible to upgrade from one version of CiviHR to the next (for example from 1.6.9 to 1.6.10). So you'll need to run the upgrade script for each version. 
-
-For easier understanding upgrade scripts are split into 3 parts. 
-- PRE RELEASE part which is done before any code is updated
-- RELEASE part which updates the code from the repos and runs upgrades
-- POST RELEASE which takes care of any new configurations that need to be made after upgrades
-
-Upgrade scripts can be found in upgrade-scripts folder. They must be run from web root folder of the site, not any of it subdirs due to depending on relative paths to run git updates.
+Currently it's only possible to upgrade from one version of CiviHR to the next (for example from 1.6.9 to 1.6.10). So you'll need to run the upgrade script for each version. These scripts can be found in upgrade-scripts folder. They must be run from web root folder of the site, not any of it subdirs due to depending on relative paths to run git updates.
 
 Known Issues and Limitations
 ----------------------------

@@ -27,7 +27,7 @@ libraries[civihr][destination] = modules
 libraries[civihr][directory_name] = civicrm/tools/extensions/civihr
 libraries[civihr][download][type] = git
 libraries[civihr][download][url] = https://github.com/civicrm/civihr.git
-libraries[civihr][download][branch] = master
+libraries[civihr][download][tag] = 1.7.4
 libraries[civihr][overwrite] = TRUE
 
 ; ****************************************
@@ -178,11 +178,6 @@ projects[chain_menu_access][version] = "2.0"
 projects[role_delegation][subdir] = civihr-contrib-required
 projects[role_delegation][version] = "1.1"
 
-projects[views_json_query][subdir] = civihr-contrib-required
-projects[views_json_query][version] = 1.x-dev
-projects[views_json_query][download][type] = "git"
-projects[views_json_query][patch][] = "https://raw.githubusercontent.com/compucorp/civihr-employee-portal/master/patches/views_json_query_civihr-v1.patch"
-
 projects[views_data_export][subdir] = civihr-contrib-required
 projects[views_data_export][version] = 3.1
 
@@ -216,7 +211,7 @@ libraries[civihr_employee_portal][destination] = modules
 libraries[civihr_employee_portal][directory_name] = civihr-custom
 libraries[civihr_employee_portal][download][type] = git
 libraries[civihr_employee_portal][download][url] = https://github.com/compucorp/civihr-employee-portal
-libraries[civihr_employee_portal][download][branch] = master
+libraries[civihr_employee_portal][download][tag] = 1.7.4
 libraries[civihr_employee_portal][overwrite] = TRUE
 
 ; ****************************************
@@ -230,7 +225,7 @@ projects[radix][version] = "3.4"
 libraries[civihr_employee_portal_theme][destination] = themes
 libraries[civihr_employee_portal_theme][download][type] = git
 libraries[civihr_employee_portal_theme][download][url] = https://github.com/compucorp/civihr-employee-portal-theme
-libraries[civihr_employee_portal_theme][download][branch] = master
+libraries[civihr_employee_portal_theme][download][tag] = 1.7.4
 libraries[civihr_employee_portal_theme][overwrite] = TRUE
 
 ; ****************************************
@@ -247,7 +242,7 @@ projects[bootstrap][version] = "3.1"
 libraries[civihr_tasks][destination] = modules/civicrm/tools/extensions
 libraries[civihr_tasks][download][type] = git
 libraries[civihr_tasks][download][url] = https://github.com/compucorp/civihr-tasks-assignments
-libraries[civihr_tasks][download][branch] = master
+libraries[civihr_tasks][download][tag] = 1.7.4
 libraries[civihr_tasks][overwrite] = TRUE
 
 ; ****************************************
@@ -257,11 +252,13 @@ libraries[civihr_tasks][overwrite] = TRUE
 libraries[org.civicrm.shoreditch][destination] = modules/civicrm/tools/extensions
 libraries[org.civicrm.shoreditch][download][type] = git
 libraries[org.civicrm.shoreditch][download][url] = https://github.com/civicrm/org.civicrm.shoreditch
+libraries[org.civicrm.shoreditch][download][tag] = 0.1-alpha16
 libraries[org.civicrm.shoreditch][overwrite] = TRUE
 
 libraries[org.civicrm.styleguide][destination] = modules/civicrm/tools/extensions
 libraries[org.civicrm.styleguide][download][type] = git
 libraries[org.civicrm.styleguide][download][url] = https://github.com/civicrm/org.civicrm.styleguide
+libraries[org.civicrm.atyleguide][download][tag] = 0.1-alpha3
 libraries[org.civicrm.styleguide][overwrite] = TRUE
 
 ; ****************************************
