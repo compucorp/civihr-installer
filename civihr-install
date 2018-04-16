@@ -790,6 +790,13 @@ function _civihr_disabled_unused_blocks() {
   done
 }
 
+##
+# Runs the scripts that patches the compucorp's civicrm-core fork on
+# the original core files
+function apply_core_fork_patch() {
+  bash ${CIVI_CORE}/tools/extensions/civihr/bin/apply-core-fork-patch.sh
+}
+
 ##########################################################
 # Installs CiviHR extensions
 # Arguments:
@@ -879,6 +886,7 @@ function civihr_install_site(){
     drush vset mailsystem_theme default
     drush dis -y mimemail_compress
 
+    apply_core_fork_patch
     install_civihr
 
     drush -y en civicrmtheme \
