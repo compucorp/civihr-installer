@@ -794,7 +794,12 @@ function _civihr_disabled_unused_blocks() {
 # Runs the scripts that patches the compucorp's civicrm-core fork on
 # the original core files
 function apply_core_fork_patch() {
-  (cd ${CIVI_CORE}/tools/extensions/civihr && bash bin/apply-core-fork-patch.sh)
+  pushd "${CIVI_CORE}/tools/extensions/civihr" >> /dev/null
+    APPLY_FOR_SCRIPT=bin/apply-core-fork-patch.sh
+    if [ -e ${APPLY_FOR_SCRIPT} ]; then
+        bash ${APPLY_FOR_SCRIPT}
+    fi;
+  popd
 }
 
 ##########################################################
