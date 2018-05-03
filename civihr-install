@@ -885,6 +885,9 @@ function civihr_install_site(){
 
     drush vset --format=integer node_export_reset_path_webform 0
 
+    ## Disable error logging in Drupal
+    drush vset -y error_level 0
+
     ## Mail settings
     drush vset --format=integer mimemail_sitestyle 0
     drush vset --format=integer smtp_allowhtml 1
