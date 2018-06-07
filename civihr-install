@@ -876,7 +876,6 @@ function civihr_install_site(){
       masquerade \
       smtp \
       logintoboggan \
-      yoti \
       menu_attributes \
       roles_for_menu
 
