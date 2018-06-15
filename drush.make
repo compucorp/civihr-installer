@@ -26,7 +26,7 @@ libraries[civicrm][download][url] = "https://download.civicrm.org/civicrm-4.7.27
 libraries[civihr][destination] = modules
 libraries[civihr][directory_name] = civicrm/tools/extensions/civihr
 libraries[civihr][download][type] = git
-libraries[civihr][download][url] = https://github.com/civicrm/civihr.git
+libraries[civihr][download][url] = https://github.com/compucorp/civihr.git
 libraries[civihr][download][tag] = 1.7.7
 libraries[civihr][overwrite] = TRUE
 
