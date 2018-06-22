@@ -202,6 +202,12 @@ projects[roles_for_menu][version] = 1.1
 projects[views_slideshow][subdir] = civihr-contrib-required
 projects[views_slideshow][version] = 3.9
 
+projects[google_tag][subdir] = civihr-contrib-required
+projects[google_tag][version] = 1.3
+
+projects[datalayer][subdir] = civihr-contrib-required
+projects[datalayer][version] = 1.1
+
 ; ****************************************
 ; Compucorp custom drupal modules
 ; ****************************************
