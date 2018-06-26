@@ -752,17 +752,6 @@ function _civihr_create_default_users() {
 }
 
 ##########################################################
-# Creates the "Personal" Location Type
-# Arguments:
-#   None
-# Returns:
-#   None
-##########################################################
-function _civihr_create_personal_location_type() {
-  drush cvapi LocationType.create sequential=1 name="Personal" display_name="Personal" vcard_name="PERSONAL" description="Place of Residence"
-}
-
-##########################################################
 # Deletes the "Name and address profile"
 # Arguments:
 #   None
@@ -917,7 +906,6 @@ function civihr_install_site(){
     _civihr_setup_themes
     _civihr_create_default_users
     _civihr_disabled_unused_blocks
-    _civihr_create_personal_location_type
     _civihr_delete_name_and_address_profile
 
     ## Create My Details and My Emergency Contact forms
