@@ -263,7 +263,7 @@ libraries[org.civicrm.shoreditch][overwrite] = TRUE
 libraries[org.civicrm.styleguide][destination] = modules/civicrm/tools/extensions
 libraries[org.civicrm.styleguide][download][type] = git
 libraries[org.civicrm.styleguide][download][url] = https://github.com/civicrm/org.civicrm.styleguide
-libraries[org.civicrm.atyleguide][download][tag] = v0.1-alpha7
+libraries[org.civicrm.styleguide][download][tag] = v0.1-alpha7
 libraries[org.civicrm.styleguide][overwrite] = TRUE
 
 ; ****************************************
