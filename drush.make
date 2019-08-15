@@ -21,13 +21,13 @@ projects[] = drupal
 libraries[civicrm][destination] = modules
 libraries[civicrm][directory_name] = civicrm
 libraries[civicrm][download][type] = get
-libraries[civicrm][download][url] = "https://download.civicrm.org/civicrm-5.3.1-drupal.tar.gz"
+libraries[civicrm][download][url] = "https://download.civicrm.org/civicrm-5.15.1-drupal.tar.gz"
 
 libraries[civihr][destination] = modules
 libraries[civihr][directory_name] = civicrm/tools/extensions/civihr
 libraries[civihr][download][type] = git
 libraries[civihr][download][url] = https://github.com/compucorp/civihr.git
-libraries[civihr][download][tag] = 1.7.14
+libraries[civihr][download][tag] = 1.7.15
 libraries[civihr][overwrite] = TRUE
 
 ; ****************************************
@@ -44,14 +44,14 @@ projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-rc1
 
 projects[webform][subdir] = contrib
-projects[webform][version] = 4.12
+projects[webform][version] = 4.19
 
 projects[webform_civicrm][subdir] = contrib
 projects[webform_civicrm][version] = "4.20"
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.18
-projects[views][patch][] = "https://www.drupal.org/files/issues/views-exposed_forms_ajax_support-1183418-73.patch"
+projects[views][version] = 3.23
+projects[views][patch][] = "https://www.drupal.org/files/issues/2019-06-06/views-ajax_callback-1183418-154-D7.patch""
 
 projects[userprotect][subdir] = contrib
 projects[userprotect][version] = "1.1"
@@ -68,7 +68,7 @@ projects[devel][version] = 1.5
 ; ****************************************
 
 projects[ctools][subdir] = civihr-contrib-required
-projects[ctools][version] = "1.9"
+projects[ctools][version] = "1.15"
 
 projects[date][subdir] = civihr-contrib-required
 projects[date][version] = "2.8"
@@ -80,7 +80,7 @@ projects[civicrm_entity][subdir] = civihr-contrib-required
 projects[civicrm_entity][version] = "2.x-dev"
 
 projects[features][subdir] = civihr-contrib-required
-projects[features][version] = "2.10"
+projects[features][version] = "2.11"
 
 projects[features_extra][subdir] = civihr-contrib-required
 projects[features_extra][version] = "1.0"
@@ -113,7 +113,7 @@ projects[radix_layouts][subdir] = civihr-contrib-required
 projects[radix_layouts][version] = "3.3"
 
 projects[uuid][subdir] = civihr-contrib-required
-projects[uuid][version] = "1.2"
+projects[uuid][version] = "1.3"
 
 projects[node_export][subdir] = civihr-contrib-required
 projects[node_export][version] = "3.0"
@@ -216,7 +216,7 @@ libraries[civihr_employee_portal][destination] = modules
 libraries[civihr_employee_portal][directory_name] = civihr-custom
 libraries[civihr_employee_portal][download][type] = git
 libraries[civihr_employee_portal][download][url] = https://github.com/compucorp/civihr-employee-portal
-libraries[civihr_employee_portal][download][tag] = 1.7.14
+libraries[civihr_employee_portal][download][tag] = 1.7.15
 libraries[civihr_employee_portal][overwrite] = TRUE
 
 ; ****************************************
@@ -230,7 +230,7 @@ projects[radix][version] = "3.4"
 libraries[civihr_employee_portal_theme][destination] = themes
 libraries[civihr_employee_portal_theme][download][type] = git
 libraries[civihr_employee_portal_theme][download][url] = https://github.com/compucorp/civihr-employee-portal-theme
-libraries[civihr_employee_portal_theme][download][tag] = 1.7.14
+libraries[civihr_employee_portal_theme][download][tag] = 1.7.15
 libraries[civihr_employee_portal_theme][overwrite] = TRUE
 
 ; ****************************************
@@ -247,7 +247,7 @@ projects[bootstrap][version] = "3.1"
 libraries[civihr_tasks][destination] = modules/civicrm/tools/extensions
 libraries[civihr_tasks][download][type] = git
 libraries[civihr_tasks][download][url] = https://github.com/compucorp/civihr-tasks-assignments
-libraries[civihr_tasks][download][tag] = 1.7.14
+libraries[civihr_tasks][download][tag] = 1.7.15
 libraries[civihr_tasks][overwrite] = TRUE
 
 ; ****************************************
@@ -257,7 +257,7 @@ libraries[civihr_tasks][overwrite] = TRUE
 libraries[org.civicrm.shoreditch][destination] = modules/civicrm/tools/extensions
 libraries[org.civicrm.shoreditch][download][type] = git
 libraries[org.civicrm.shoreditch][download][url] = https://github.com/civicrm/org.civicrm.shoreditch
-libraries[org.civicrm.shoreditch][download][tag] = v0.1-alpha29
+libraries[org.civicrm.shoreditch][download][tag] = v0.1-alpha32
 libraries[org.civicrm.shoreditch][overwrite] = TRUE
 
 libraries[org.civicrm.styleguide][destination] = modules/civicrm/tools/extensions
